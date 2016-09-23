@@ -1,0 +1,2 @@
+# aquamacs-profile
+Aquamacs customizations.
