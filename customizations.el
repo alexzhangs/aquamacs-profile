@@ -40,14 +40,19 @@
  '(truncate-lines t)
  '(visual-line-mode nil t))
 
+(set-fontset-font "fontset-default" 'han '("PingFang SC"))
+(set-default-font "Source Code Pro for Powerline")
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight light :height 110 :width normal :foundry "nil" :family "Source Code Pro for Powerline"))))
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight light :height 110 :width normal :foundry "nil"))))
  '(aquamacs-variable-width ((t (:stipple nil :strike-through nil :underline nil :slant normal :weight normal :height 110 :width normal :family "Lucida Grande"))))
- '(text-mode-default ((t (:inherit autoface-default :stipple nil :strike-through nil :underline nil :slant normal :weight light :height 110 :width normal :family "Source Code Pro for Powerline")))))
+ '(bold ((t (:weight semi-bold))))
+ '(bold-italic ((t (:slant italic :weight semi-bold))))
+ '(text-mode-default ((t (:inherit autoface-default :stipple nil :strike-through nil :underline nil :slant normal :weight light :height 110 :width normal)))))
 
 (defun bcomp ()
   "Run ediff-files on a pair of files marked in dired buffer"
